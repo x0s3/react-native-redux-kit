@@ -1,0 +1,39 @@
+/**
+ * Created by root on 7/06/17.
+ */
+import React, {Component} from 'react';
+import {View, Text, Button, StyleSheet} from 'react-native';
+import {connect} from 'react-redux';
+import {aumentar, disminuir} from '../reducers/contador';
+
+class Contador extends Component {
+
+    render() {
+        const {contador,aumentar,disminuir} = this.props;
+        return (
+            <View>
+                <Text style={style.contador}>Contador 2: {contador}</Text>
+                <Button title="Aumentar contador" onPress={() => aumentar()}/>
+                <Button title="Disminuar contador" onPress={() => disminuir()}/>
+            </View>
+        )
+    }
+}
+
+const mapDispatchToProps = {
+    aumentar: () => aumentar(1),
+    disminuir: () => disminuir(1)
+};
+
+const style = StyleSheet.create({
+    contador: {
+        fontSize: 20,
+        color: 'blue',
+    }
+});
+
+const mapStateToProps = (state) => ({
+    contador: state.contador.contador
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Contador);
