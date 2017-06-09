@@ -11,7 +11,7 @@ var _reactNative = require('react-native');
 
 var _reactRedux = require('react-redux');
 
-var _contador = require('../reducers/contador');
+var _contadorReducer = require('../routes/contadorReducer');
 
 var Contador = function (_Component) {
     babelHelpers.inherits(Contador, _Component);
@@ -69,10 +69,10 @@ var Contador = function (_Component) {
 
 var mapDispatchToProps = {
     aumentar: function aumentar() {
-        return (0, _contador.aumentar)(1);
+        return (0, _contadorReducer.aumentar)(1);
     },
     disminuir: function disminuir() {
-        return (0, _contador.disminuir)(1);
+        return (0, _contadorReducer.disminuir)(1);
     }
 };
 

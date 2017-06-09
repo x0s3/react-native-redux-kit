@@ -5,8 +5,8 @@ import React from 'react';
 import {View} from 'react-native';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
-import Reducers from './reducers';
-import TabarBarList from './TabBarList';
+import Reducers from './routes';
+import TabarBarList from './routes/TabBarList';
 
 const App = () => (
     <Provider store={createStore(Reducers)}>

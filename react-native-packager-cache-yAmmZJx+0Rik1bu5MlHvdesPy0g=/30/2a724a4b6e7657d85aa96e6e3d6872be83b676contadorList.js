@@ -11,7 +11,7 @@ var _reactNative = require('react-native');
 
 var _reactRedux = require('react-redux');
 
-var _contador = require('../reducers/contador');
+var _contador = require('../routes/contador');
 
 var Contador = function (_Component) {
     babelHelpers.inherits(Contador, _Component);

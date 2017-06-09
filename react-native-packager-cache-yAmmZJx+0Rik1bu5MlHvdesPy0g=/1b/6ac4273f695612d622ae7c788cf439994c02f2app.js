@@ -13,18 +13,18 @@ var _reactRedux = require('react-redux');
 
 var _redux = require('redux');
 
-var _reducers = require('./reducers');
+var _routes = require('./routes');
 
-var _reducers2 = babelHelpers.interopRequireDefault(_reducers);
+var _routes2 = babelHelpers.interopRequireDefault(_routes);
 
-var _TabBarList = require('./TabBarList');
+var _TabBarList = require('./routes/TabBarList');
 
 var _TabBarList2 = babelHelpers.interopRequireDefault(_TabBarList);
 
 var App = function App() {
     return _react2.default.createElement(
         _reactRedux.Provider,
-        { store: (0, _redux.createStore)(_reducers2.default), __source: {
+        { store: (0, _redux.createStore)(_routes2.default), __source: {
                 fileName: _jsxFileName,
                 lineNumber: 12
             }

@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
-import SuperheroesList from './views/superheroesList';
-import Contador from './views/contador';
+import SuperheroesList from './Home/component/superheroesList';
+import Contador from './Counter/component/contador';
 
 import TabBar from 'react-native-smartbar';
 
@@ -23,16 +23,16 @@ export default class TabBarList extends Component {
                 index={this.state.index}
             >
                 <TabBar.Item
-                    icon={require('../src/views/teamwork.png')}
-                    selectedIcon={require('../src/views/teamwork.png')}
+                    icon={require('./teamwork.png')}
+                    selectedIcon={require('./teamwork.png')}
                     text={'Home'}
                 >
                     <SuperheroesList />
                 </TabBar.Item>
 
                 <TabBar.Item
-                    icon={require('../src/views/teamwork.png')}
-                    selectedIcon={require('../src/views/teamwork.png')}
+                    icon={require('./teamwork.png')}
+                    selectedIcon={require('./teamwork.png')}
                     text={'Contador'}
                 >
                     <Contador/>

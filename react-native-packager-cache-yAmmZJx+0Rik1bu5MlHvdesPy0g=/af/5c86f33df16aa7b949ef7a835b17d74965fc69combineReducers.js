@@ -29,7 +29,7 @@ function getUnexpectedStateShapeWarningMessage(inputState, reducers, action, une
   var argumentName = action && action.type === _createStore.ActionTypes.INIT ? 'preloadedState argument passed to createStore' : 'previous state received by the reducer';
 
   if (reducerKeys.length === 0) {
-    return 'Store does not have a valid reducer. Make sure the argument passed ' + 'to combineReducers is an object whose values are reducers.';
+    return 'Store does not have a valid reducer. Make sure the argument passed ' + 'to combineReducers is an object whose values are routes.';
   }
 
   if (!(0, _isPlainObject2['default'])(inputState)) {

@@ -4,7 +4,7 @@
 import React, {Component} from 'react';
 import {View, Text, Button, StyleSheet} from 'react-native';
 import {connect} from 'react-redux';
-import {aumentar, disminuir} from '../reducers/contador';
+import {aumentar, disminuir} from '../reducer/contadorReducer';
 
 class Contador extends Component {
 
@@ -12,7 +12,7 @@ class Contador extends Component {
         const {contador,aumentar,disminuir} = this.props;
         return (
             <View>
-                <Text style={style.contador}>Contador 2: {contador}</Text>
+                <Text style={style.contador}>Contador: {contador}</Text>
                 <Button title="Aumentar contador" onPress={() => aumentar()}/>
                 <Button title="Disminuar contador" onPress={() => disminuir()}/>
             </View>

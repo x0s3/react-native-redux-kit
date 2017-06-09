@@ -1,7 +1,7 @@
 Object.defineProperty(exports, "__esModule", {
     value: true
 });
-var _jsxFileName = '/root/WebstormProjects/xoseRedux/src/views/contador.js';
+var _jsxFileName = '/root/WebstormProjects/xoseRedux/src/views/contadorReducer.js';
 
 var _react = require('react');
 
@@ -11,7 +11,7 @@ var _reactNative = require('react-native');
 
 var _reactRedux = require('react-redux');
 
-var _contador = require('../reducers/contador2');
+var _contador = require('../routes/contador2');
 
 var Contador2 = function (_Component) {
     babelHelpers.inherits(Contador2, _Component);

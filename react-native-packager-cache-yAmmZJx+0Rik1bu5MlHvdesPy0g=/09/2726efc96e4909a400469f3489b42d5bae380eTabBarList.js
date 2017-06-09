@@ -7,11 +7,11 @@ var _react = require('react');
 
 var _react2 = babelHelpers.interopRequireDefault(_react);
 
-var _superheroesList = require('./views/superheroesList');
+var _superheroesList = require('./routes/Home/component/superheroesList');
 
 var _superheroesList2 = babelHelpers.interopRequireDefault(_superheroesList);
 
-var _contador = require('./views/contador');
+var _contador = require('./routes/Counter/component/contador');
 
 var _contador2 = babelHelpers.interopRequireDefault(_contador);
 
